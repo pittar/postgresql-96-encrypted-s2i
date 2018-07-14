@@ -12,4 +12,7 @@ chmod 600 /var/lib/pgsql/data/server.key # /etc/pki/tls/private/server.key
 #update-ca-trust enable
 #update-ca-trust extract
 
+echo "Show files in data dir, should be server.crt in here..."
+ls -la /var/lib/pgsql/data
+
 echo "hostssl all         shah    0.0.0.0/0             md5 clientcert=1" >> /var/lib/pgsql/data/pg_hba.conf
