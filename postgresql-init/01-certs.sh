@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Data dir should exist.  Now copy in certs."
+
 cp /tmp/certs/root.crt /var/lib/pgsql/data/userdata/root.crt
 # cp /tmp/certs/root.crt /etc/pki/ca-trust/source/anchors/
 cp /tmp/certs/server.crt /var/lib/pgsql/data/userdata/server.crt
