@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Change rights on key file."
+
+chmod 600 /var/lib/pgsql/certs/server.key
+
 echo "What is in the certs dir."
 
 ls -la /var/lib/pgsql/certs
