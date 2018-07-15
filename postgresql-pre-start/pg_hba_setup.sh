@@ -2,6 +2,11 @@
 
 echo "Change rights on key file."
 
+mkdir -p /var/lib/pgsql/certs
+
+cp /tmp/certs/root.crt /var/lib/pgsql/certs/root.crt
+cp /tmp/certs/server.crt /var/lib/pgsql/certs/server.crt
+cp /tmp/certs/server.key /var/lib/pgsql/certs/server.key
 chmod 600 /var/lib/pgsql/certs/server.key
 
 echo "What is in the certs dir."
